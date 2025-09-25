@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mina Wafik - Cybersecurity Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #0a192f;
+            color: #ccd6f6;
+        }
+        .accent-color {
+            color: #64ffda;
+        }
+        .nav-link {
+            transition: color 0.3s;
+        }
+        .nav-link:hover {
+            color: #64ffda;
+        }
+        .section-heading {
+            color: #ccd6f6;
+        }
+        .card {
+            background-color: #112240;
+            border: 1px solid #1d2d50;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="bg-opacity-90 backdrop-blur-md bg-[#0a192f] sticky top-0 z-50 px-4">
+        <nav class="container mx-auto flex justify-between items-center py-4">
+            <a href="#" class="text-2xl font-bold accent-color">MW</a>
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#work" class="nav-link">Work</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-2xl">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="#about" class="block py-2 px-4 text-sm hover:bg-[#112240]">About</a>
+            <a href="#experience" class="block py-2 px-4 text-sm hover:bg-[#112240]">Experience</a>
+            <a href="#work" class="block py-2 px-4 text-sm hover:bg-[#112240]">Work</a>
+            <a href="#contact" class="block py-2 px-4 text-sm hover:bg-[#112240]">Contact</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 lg:px-8">
+
+        <!-- Hero Section -->
+        <section class="min-h-screen flex flex-col justify-center items-start text-left pt-20">
+            <p class="text-lg accent-color mb-4">Hi, my name is</p>
+            <h1 class="text-4xl md:text-7xl font-bold text-gray-200">Mina Wafik.</h1>
+            <h2 class="text-4xl md:text-6xl font-bold text-gray-400 mt-2">I build secure digital environments.</h2>
+            <p class="mt-6 max-w-xl text-gray-400">
+                I'm a junior cybersecurity specialist focused on protecting networks with intelligence and precision. I provide vulnerability assessments, security checks, and system hardening to ensure digital integrity.
+            </p>
+            <a href="#contact" class="mt-8 inline-block bg-transparent border border-[#64ffda] text-[#64ffda] font-semibold py-3 px-6 rounded-lg hover:bg-[#64ffda] hover:text-[#0a192f] transition-colors duration-300">
+                Get In Touch
+            </a>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="py-24">
+            <h2 class="text-3xl font-bold section-heading mb-3 relative inline-block">
+                About Me
+                <span class="absolute -bottom-1 left-0 w-1/2 h-1 bg-[#64ffda]"></span>
+            </h2>
+            <div class="flex flex-col md:flex-row items-center gap-10 mt-8">
+                <div class="md:w-2/3 text-gray-400 space-y-4">
+                    <p>
+                        I am a dedicated cybersecurity specialist with a strong foundation in networking, operating systems (Windows & Linux), and modern information security practices. My passion lies in identifying and mitigating digital threats before they can cause harm.
+                    </p>
+                    <p>
+                        I provide essential security services like basic vulnerability assessments, website security checks, and system hardening, primarily for small businesses and individuals looking to secure their online presence.
+                    </p>
+                    <p class="font-semibold accent-color">Here are a few technologies I've been working with recently:</p>
+                    <ul class="grid grid-cols-2 gap-2 text-sm">
+                        <li class="flex items-center"><span class="accent-color mr-2">▹</span>FortiGate</li>
+                        <li class="flex items-center"><span class="accent-color mr-2">▹</span>Cisco Packet Tracer</li>
+                        <li class="flex items-center"><span class="accent-color mr-2">▹</span>Wireshark</li>
+                        <li class="flex items-center"><span class="accent-color mr-2">▹</span>Windows & Linux OS</li>
+                         <li class="flex items-center"><span class="accent-color mr-2">▹</span>VAPT Tools</li>
+                        <li class="flex items-center"><span class="accent-color mr-2">▹</span>Protocol Security</li>
+                    </ul>
+                </div>
+                <div class="md:w-1/3 flex justify-center">
+                    <div class="w-64 h-64 rounded-lg overflow-hidden relative group">
+                        <img src="https://placehold.co/400x400/112240/64ffda?text=Mina+Wafik" alt="Mina Wafik" class="w-full h-full object-cover rounded-lg">
+                        <div class="absolute inset-0 bg-[#64ffda] mix-blend-multiply opacity-50 group-hover:opacity-0 transition-opacity duration-300"></div>
+                        <div class="absolute inset-0 border-2 border-[#64ffda] rounded-lg transform translate-x-3 translate-y-3 group-hover:translate-x-0 group-hover:translate-y-0 transition-transform duration-300"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience & Education Section -->
+        <section id="experience" class="py-24">
+            <h2 class="text-3xl font-bold section-heading mb-8 relative inline-block">
+                Experience & Education
+                <span class="absolute -bottom-1 left-0 w-1/2 h-1 bg-[#64ffda]"></span>
+            </h2>
+            <div class="relative border-l-2 border-[#1d2d50] pl-10">
+                <!-- Freelancer -->
+                <div class="mb-12">
+                    <div class="absolute -left-3.5 mt-1.5 h-6 w-6 rounded-full bg-[#64ffda]"></div>
+                    <p class="text-sm text-[#64ffda]">Aug 2025 - Present</p>
+                    <h3 class="text-xl font-bold text-gray-200 mt-1">Freelancer Cybersecurity</h3>
+                    <p class="text-gray-400 mt-2">Providing freelance cybersecurity services including VAPT, security audits, malware removal, and SSL setup for websites.</p>
+                </div>
+                <!-- Bachelor's Degree -->
+                <div class="mb-12">
+                    <div class="absolute -left-3.5 mt-1.5 h-6 w-6 rounded-full bg-[#64ffda]"></div>
+                    <p class="text-sm text-[#64ffda]">Expected 2025</p>
+                    <h3 class="text-xl font-bold text-gray-200 mt-1">Bachelor of Engineering</h3>
+                    <p class="text-gray-400">Ain Shams University - Electronics and Communications</p>
+                </div>
+                <!-- Fortinet Diploma -->
+                <div class="mb-12">
+                    <div class="absolute -left-3.5 mt-1.5 h-6 w-6 rounded-full bg-[#64ffda]"></div>
+                    <p class="text-sm text-[#64ffda]">July 2025 - Dec 2025</p>
+                    <h3 class="text-xl font-bold text-gray-200 mt-1">Diploma of Fortinet Cybersecurity Engineer</h3>
+                    <p class="text-gray-400">DEPI</p>
+                </div>
+                <!-- CCNA Certificate -->
+                <div>
+                    <div class="absolute -left-3.5 mt-1.5 h-6 w-6 rounded-full bg-[#64ffda]"></div>
+                    <p class="text-sm text-[#64ffda]">Sept 2024 - Oct 2024</p>
+                    <h3 class="text-xl font-bold text-gray-200 mt-1">Cisco Certified Network Associate (CCNA)</h3>
+                    <p class="text-gray-400">WE Training Program</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- My Work Section -->
+        <section id="work" class="py-24">
+            <h2 class="text-3xl font-bold section-heading mb-8 relative inline-block">
+                My Work
+                <span class="absolute -bottom-1 left-0 w-1/2 h-1 bg-[#64ffda]"></span>
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Project 1 -->
+                <div class="card p-6 rounded-lg">
+                    <h3 class="text-xl font-bold text-gray-200">DVWA Web Application Security Assessment</h3>
+                    <p class="text-gray-400 mt-2">A security assessment performed against a local DVWA installation to identify web vulnerabilities and demonstrate exploitation techniques in a controlled environment.</p>
+                    <div class="mt-4">
+                        <p class="font-semibold text-gray-300">Key Findings:</p>
+                        <p class="text-gray-400 text-sm">Confirmed a Blind SQL Injection (time-based) vulnerability, allowing an attacker to extract database information using time-based techniques.</p>
+                    </div>
+                    <div class="mt-4 flex flex-wrap gap-2">
+                        <span class="text-xs bg-[#1d2d50] text-[#64ffda] py-1 px-3 rounded-full">VAPT</span>
+                        <span class="text-xs bg-[#1d2d50] text-[#64ffda] py-1 px-3 rounded-full">SQL Injection</span>
+                        <span class="text-xs bg-[#1d2d50] text-[#64ffda] py-1 px-3 rounded-full">OWASP ZAP</span>
+                    </div>
+                </div>
+                
+                <!-- Placeholder for future projects -->
+                <div class="card p-6 rounded-lg flex flex-col justify-center items-center text-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-gray-500 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+                    </svg>
+                    <h3 class="text-xl font-bold text-gray-200">Future Project</h3>
+                    <p class="text-gray-400 mt-2">More projects will be added here soon. Stay tuned!</p>
+                </div>
+            </div>
+        </section>
+
+         <!-- Services Section -->
+        <section id="services" class="py-24 text-center">
+            <h2 class="text-3xl font-bold section-heading mb-8 relative inline-block">
+                Services I Offer
+                <span class="absolute -bottom-1 left-0 w-1/2 h-1 bg-[#64ffda]"></span>
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-left">
+                <div class="card p-6 rounded-lg">
+                    <h3 class="text-xl font-bold text-gray-200">Vulnerability Assessment & Pen Testing</h3>
+                    <p class="text-gray-400 mt-2 text-sm">Comprehensive testing for websites and web applications, along with network vulnerability scanning and exploitation.</p>
+                </div>
+                <div class="card p-6 rounded-lg">
+                    <h3 class="text-xl font-bold text-gray-200">Security Audits & Compliance</h3>
+                    <p class="text-gray-400 mt-2 text-sm">Detailed security risk assessment reports to identify potential threats and ensure compliance with security standards.</p>
+                </div>
+                <div class="card p-6 rounded-lg">
+                    <h3 class="text-xl font-bold text-gray-200">Website Security Hardening</h3>
+                    <p class="text-gray-400 mt-2 text-sm">Malware removal from platforms like WordPress and Joomla, plus SSL certificate setup for HTTPS security.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-24 text-center">
+            <h2 class="text-3xl font-bold accent-color mb-4">Get In Touch</h2>
+            <p class="max-w-xl mx-auto text-gray-400 mb-8">
+                I'm currently open to new opportunities and freelance projects. Whether you have a question or just want to say hi, I'll do my best to get back to you!
+            </p>
+            <a href="mailto:minawafikhalim2020@gmail.com" class="inline-block bg-[#64ffda] text-[#0a192f] font-bold py-4 px-8 rounded-lg hover:bg-opacity-90 transition-colors duration-300">
+                Say Hello
+            </a>
+
+            <div class="mt-12 flex justify-center space-x-6">
+                 <a href="tel:01272851992" class="text-gray-400 hover:text-[#64ffda] transition-colors" aria-label="Phone">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                 </a>
+                 <a href="https://www.linkedin.com/in/mina-wafik" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-[#64ffda] transition-colors" aria-label="LinkedIn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                 </a>
+            </div>
+        </section>
+
+    </main>
+    
+    <footer class="text-center py-6">
+        <p class="text-sm text-gray-500">Designed & Built by Mina Wafik</p>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        const mobileNavLinks = mobileMenu.querySelectorAll('a');
+        mobileNavLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+
+</body>
+</html>
